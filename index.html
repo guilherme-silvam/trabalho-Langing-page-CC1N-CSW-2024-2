@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./src/image/uvv.icon.png">
+    <title>Landing Page - Guilherme Machado</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#github">Github</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1 id="titulo-principal">Sobre Mim</h1>
+        <br><br>
+        <img src="./src/image/ft-me.jpg" alt="foto do guilherme machado" width="100%" height="20%" id="img-me">
+        <br><br><br>
+        <h1>Bem-vindo a minha Landing Page! Aqui você vai conhecer um pouco sobre mim e meus Serviços</h1>
+        <br><br>
+        <h2>Resumo pessoal</h2>
+        <br>
+        <p>Hello World! Eu sou Guilherme Machado, tenho 21 anos e moro em Vitória, ES. Sou apaixonado por esportes, independentemente da modalidade, e movido por uma curiosidade constante, sempre buscando aprender algo novo.</p>
+        <br><br>
+        <h2>Histórico Acadêmico</h2>
+        <br>
+        <p>Fiz meu ensino fundamental na Rede Sagrado Coração de Maria e o ensino medío na Escola Charles Darwin, onde fui lider de Turma no 1° ano. Comecei a fazer Sistema de Informação na faculdade Multivix e agora Curso Ciencias da Computação na UVV. Minhas matéria favorita é Construção de Software para Web </p>
+        <br><br>
+        <h2>Objetivos Profissionais</h2>
+        <br>
+        <p>No futuro, pretendo me especializar em desenvolvimento full-stack e trabalhar com grandes projetos no Estados Unidos</p>
+    </section>
+
+    <section id="curriculo">
+        <h2 class="titulo-section">Currículo</h2>
+        <br>
+        <h3> Experiencias/Soft Skills:</h3>
+        <br>
+        <ol class="curriculo">
+            <li>Lider de Turma no 1° ano No Colegio Charles Darwin</li>
+            <li>Coordenador da Pastoral do Adolescente da Igreja Santa Rita (2019 - 2022)</li>
+            <li>Trabalho em Equipe</li>
+            <li>Comunicativo</li>
+            <li>Aprendo Rapído</li>
+        </ol>
+
+        <br>
+
+        <h3> Experiencias/Hard Skills:</h3>
+        <br>
+        <ol class="curriculo">
+            <li>Estagiario na Globalsys na Area de automação de Processo</li>
+            <li>Certificado na plataforma Lecom (No code/Low code)</li>
+            <li>Cursando Dev Quest, curso Full Stack</li>
+            <li>Experiencia com HTML, CSS e JS</li>
+            <li>Desenvolvimento de websites para estudo</li>
+        </ol>
+    </section>
+
+    <section id="github">
+        <h2 class="titulo-section">Github</h2>
+        <br>
+        <a href="https://github.com/guilherme-silvam" target="_blank">
+            <img src="./src/image/github.png" alt="Meu Github" width="100%">
+        </a>
+        <br> <br>
+        <p><strong>Para acessar meus projetos basta clicar na foto do meu Github</strong></p>
+    </section>
+
+    <section id="servicos" >
+        <h2 class="titulo-section">Serviços de Desenvolvimento</h2>
+        <br>
+        <p>Ofereço serviços de desenvolvimento de websites, com pacotes variados para atender diferentes necessidades:</p>
+        <br>
+        <table>
+            <tr>
+                <th>Tipo de Site</th>
+                <th>Preço Estimado</th>
+            </tr>
+            <tr>
+                <td>Site com 1-2 páginas (estático)</td>
+                <td>R$ 500,00</td>
+            </tr>
+            <tr>
+                <td>Site com 3-5 páginas (estático)</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                <td>Site com mais de 5 páginas (estático)</td>
+                <td>R$ 2.000,00+</td>
+            </tr>
+            <tr>
+                <td>Site dinâmico</td>
+                <td>R$ 2.500,00</td>
+            </tr>
+            <tr>
+                <td>Site avançado</td>
+                <td>Sob consulta</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contato">
+        <h2 class="titulo-section">Contato</h2>
+        <form action="submit_form.php" method="post">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="tipo">Você é:</label>
+            <select id="tipo" name="tipo">
+                <option value="fisica">Pessoa Física</option>
+                <option value="juridica">Pessoa Jurídica</option>
+            </select>
+            
+            <label for="horario">Melhor horário para contato:</label>
+            <input type="text" id="horario" name="horario">
+            
+            <label for="servico">Tipo de serviço que deseja:</label>
+            <input type="text" id="servico" name="servico" required>
+            
+            <label for="descricao">Breve descrição do que deseja:</label>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>Email Guilherme Machado:</p>
+        <ul>
+            <li><button id="email"><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=ARpgrqf2-luOXgNasErQ03jPYwbf6dpBAt-_3wvE4p1jYh_PxYJsjBzZiwZX2IXPBgnomA4HJU1p7A&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1560552652%3A1727960605747332&ddm=1"><img src="./src/image/gmail.png" alt="img email" width="20px"></a></button></li>
+        </ul>
+    </footer>
+</body>
+</html>

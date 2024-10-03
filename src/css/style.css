@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background: linear-gradient(to left, #4B0082, #87CEFA);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#titulo-principal{
+    text-align: center;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to bottom, #87CEEB, #3CB371);
+    padding: 10px;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.curriculo{
+    margin: 15px;
+}
+
+.titulo-section{
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: linear-gradient(to bottom, #87CEEB, #3CB371);
+    color: white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(to left, #4B0082, #87CEFA);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #87CEEB, #3CB371);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to left, #4B0082, #87CEFA);
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+#email:hover{
+   background: linear-gradient(to bottom, #87CEEB, #3CB371);
+   cursor: pointer;         /* Muda o cursor para mão ao passar sobre o botão */
+   animation: move 1s infinite alternate; /* Inicia a animação */
+}
